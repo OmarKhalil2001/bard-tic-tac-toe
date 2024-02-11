@@ -142,7 +142,7 @@ func (x *Game) movePrepare() (string, []int) {
 func (x *Game) GPT_Move() {
 
 	//Connects to Bard using Browser cookies
-	client := bard.New(cookie_2, cookie_1)
+	client := bard.New(cookie_1, cookie_2)
 
 	//Uses the previous moverPrepare() method to get the prompt and a list of available cells
 	prompt, avail := x.movePrepare()
